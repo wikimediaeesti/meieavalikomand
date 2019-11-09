@@ -1,0 +1,210 @@
+html {
+  font-size: @default-text-size;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: @text-black;
+  font-family: @sans-serif;
+  min-width: @min-width;
+  margin: auto;
+
+  @media @wide {
+      padding: 0 10px;
+  }
+}
+
+a {
+  color:@link-default;
+  text-decoration: none;
+
+  &:visited {
+      color:@link-visited;
+  }
+
+  &:hover {
+      color: @text-orange;
+      text-decoration: underline;
+  }
+  &.icon:hover {
+      text-decoration: none;
+  }
+
+
+  &:active, &:focus {
+      outline-style: none;
+  }
+
+  > img { border: 0; }
+
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: @very-large-text;
+}
+
+h1 a { color: @text-black !important; }
+
+h2,
+fieldset legend {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: @large-text;
+  color: @text-orange;
+  font-weight: bold;
+}
+
+#sidebar h2, .sidebar h2 {
+  font-size: @medium-text;
+  margin-left: -5px;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: @medium-text;
+  font-weight: bold;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 40px;
+  list-style-type: square;
+}
+
+ol {
+  margin-left: 0;
+  padding-left: 40px;
+}
+
+ul ul, ul ol,
+ol ol, ol ul {
+  padding-left: 20px;
+}
+
+ul.inline {
+  padding-left: 0;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+}
+
+li.separator {
+  border-top: 1px @hr-color solid;
+  margin-top: 1em;
+  &[role=separator] { list-style: none; }
+}
+
+span.pd-work {
+  background: @positive-hover-background !important;
+}
+
+span.copyrighted-work {
+  background: @negative-hover-background !important;
+}
+
+/* See http://www.longren.org/2006/09/27/wrapping-text-inside-pre-tags/ */
+pre code {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap !important;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  /* width: 99%; */
+  word-wrap: break-word;
+}
+
+.deleted { color: @dark-text; }
+
+.align-right { text-align: right; }
+
+/*
+** Header
+*/
+.header {
+  height: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  clear: both;
+}
+
+/*
+** Main content
+*/
+#page,
+#current-editing {
+    margin-top: 1em;
+    padding: 16px;
+    background: #FFF;
+    overflow: visible;
+    position: relative;
+    display: table;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+
+    @media @wide {
+        border-radius: 6px;
+    }
+}
+
+div.warning {
+    margin: 2em auto;
+    border: 1px solid @dark-border;
+    min-height: 54px;
+    width: 60em;
+    background: @warning-background;
+
+    p {
+        margin: 1em;
+    }
+}
+
+div.warning img.warning {
+    float: left;
+    margin: 12px 10px 8px 10px;
+    width: 32px;
+    height: 32px;
+}
+
+#content {
+    display: table-cell;
+    padding-right: 16px;
+    vertical-align: top;
+}
+
+
+/*
+** Footer
+*/
+#footer {
+  height: 1em;
+  margin: 1em 0;
+  padding: 0 1em;
+  font-size: @small-text;
+  color: @very-dark-text;
+}
+
+#footer a { color: @link-default; }
+#footer a:hover { color: @text-orange; }
+
+#footer p {
+  display: inline-block;
+  margin: 0;
+}
+
+#footer p.left {
+  float: left;
+  margin: 0;
+}
+
+#footer p.right {
+  float: right;
+}

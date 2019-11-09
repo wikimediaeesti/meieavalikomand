@@ -1,0 +1,36 @@
+{
+  "name": "meieavalikomand",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wikimediaeesti/meieavalikomand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wikimediaeesti/meieavalikomand/issues"
+  },
+  "homepage": "https://github.com/wikimediaeesti/meieavalikomand#readme",
+  "dependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "less": "latest",
+    "next": "latest",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "wikibase-sdk": "^7.1.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "flow-bin": "^0.77.0"
+  }
+}
